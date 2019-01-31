@@ -69,8 +69,12 @@ def areaofatriangle(m1, b1, m2, b2, m3, b3):
     y2 = intersectionoftwolines_y(m1,b1,m3,b3)
     y3 = intersectionoftwolines_y(m2,b2,m3,b3)
 
+    a = distancebetweenpoints(x1, y1, x2, y2)
+    b = distancebetweenpoints(x1, y1, x3, y3)
+    c = distancebetweenpoints(x2, y2, x3, y3)
 
-    area = 0 #replace this with your calculation for area
+
+    area = heronsformula(a, b, c) #replace this with your calculation for area
     return area
 
 
